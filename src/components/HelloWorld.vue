@@ -14,7 +14,7 @@
 <script lang="ts">
 import { defineComponent, reactive, ref } from 'vue'
 import axios from 'axios'
-import Hello from './Hello.vue'
+import Hello from './Hello_.vue'
 
 export default defineComponent({
   name: 'HelloWorld',

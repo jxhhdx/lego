@@ -2,6 +2,8 @@ import axios, { AxiosRequestConfig } from 'axios'
 import { compile } from 'path-to-regexp'
 import { createStore, ActionContext } from 'vuex'
 import user, { UserProps } from './user'
+import editor, { EditorProps } from './editor'
+
 // import { forEach } from 'lodash-es'
 export interface GlobalDataProps {
   user: UserProps;

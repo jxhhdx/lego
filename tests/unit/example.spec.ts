@@ -1,6 +1,6 @@
 import { shallowMount, VueWrapper } from "@vue/test-utils";
 import HelloWorld from "@/components/HelloWorld.vue";
-import Hello from "@/components/Hello.vue";
+import Hello from "@/components/Hello_.vue";
 import flushPromises from "flush-promises";
 import axios from "axios";
 

@@ -19,11 +19,11 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, PropType } from "vue";
-import { useStore } from "vuex";
-import { useRouter } from "vue-router";
-import { message } from "ant-design-vue";
-import { UserProps } from "../store/user";
+import { defineComponent, PropType } from "vue"
+import { useStore } from "vuex"
+import { useRouter } from "vue-router"
+import { message } from "ant-design-vue"
+import { UserProps } from "../store/user"
 
 export default defineComponent({
   name: "UserProfile",
@@ -34,23 +34,23 @@ export default defineComponent({
     },
   },
   setup() {
-    const store = useStore();
-    const router = useRouter();
+    const store = useStore()
+    const router = useRouter()
     const login = () => {
       // store.commit("login");
-      message.success("登录成功", 2);
-    };
+      message.success("登录成功", 2)
+    }
     const logout = () => {
-      console.log("here");
-      store.commit("logout");
-      message.success("退出登录成功，2秒后跳转到首页", 2);
+      console.log("here")
+      store.commit("logout")
+      message.success("退出登录成功，2秒后跳转到首页", 2)
       setTimeout(() => {
-        router.push("/");
-      }, 2000);
-    };
-    return { login, logout };
+        router.push("/")
+      }, 2000)
+    }
+    return { login, logout }
   },
-});
+})
 </script>
 
 <style>
